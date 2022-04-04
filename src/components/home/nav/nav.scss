@@ -1,0 +1,45 @@
+.menu-container {
+  position: relative;
+  height: 22rem;
+  background-color: #f5590c;
+  .nav-area {
+    position: absolute;
+    // background-color: #2d3748;
+    background-color: white;
+    color: black;
+    width: 16rem;
+    // height: 25rem;
+    z-index: 100;
+    left: 9rem;
+
+    height: 100%;
+    ul {
+      li {
+        line-height: 1.8rem;
+        padding: 0 1rem;
+        &:hover {
+          background-color: rgb(232, 232, 232);
+        }
+      }
+    }
+  }
+  .carousel-area {
+    position: absolute;
+    left: 25rem;
+    width: 62rem;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .menu-container {
+    height: auto;
+    background-color: inherit;
+    .carousel-area {
+      position: static;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
